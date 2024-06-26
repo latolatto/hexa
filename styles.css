@@ -42,25 +42,34 @@ body{
 
 
 #menuja{
-    background-color: rgba(255, 255, 255, 0.425) ;
+    /* background-color: rgba(255, 255, 255, 0.425) ; */
     /* width:100%; */
+    background-color: rgba(0, 0, 0, 0.425) ;
+    /* background-color: rgb(0, 0, 0) ; */
+    font-size: 0.9rem;
     display: flex;
     flex-direction: row;
     gap:4rem;
     justify-content: center;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    /* padding-top: 1%;
+    padding-bottom: 1%; */
     z-index: 10;
 }
 
+#menuja:hover{
+  background-color: black;
+}
 .container-fluid{
     gap:5rem;
+    color:white !important;
 }
 
 nav{
     width:100%;
 }
-
+.nav-link {
+  color:white;
+}
 
 nav ul{
     gap:2rem;
@@ -72,6 +81,15 @@ nav ul{
 }
 .navbar-nav{
     justify-content: flex-end;
+    color:white;
+}
+.navbar-brand{
+  color:white;
+}
+
+.main-logo{
+  /* width:31%; */
+  height:2rem;
 }
 .overlay { 
     color:#fff;
@@ -259,8 +277,10 @@ footer{
     padding-bottom: 0;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    justify-content: center;
+    /* align-items: flex-start; */
     width:100%;
+    gap:1rem;
 }
 
 .footer-img{
@@ -278,7 +298,7 @@ footer{
     margin-bottom: 0;
     padding-bottom: 0;
     justify-self: end;
-    align-self: flex-end;
+    /* align-self: flex-end; */
     /* bottom:5%; */
 }
 
