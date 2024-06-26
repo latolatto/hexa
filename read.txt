@@ -1,0 +1,3 @@
+remove random ball html,css and js  qe te heqesh efektin e topit tjeter qe leviz randomly
+
+change background color to #212121 of body to make the hexagons visible
