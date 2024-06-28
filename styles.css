@@ -418,34 +418,56 @@ body:hover .curser{
     height: calc(var(--v1) * 2.5);
     border-radius: 50%;
     animation: anim 2s linear infinite;
-    visibility: hidden;
-/*     transition: .1s; */
-    transform: translate(-50%, -50%);
-/*     box-shadow: 0px 0px 100px rgba(0,255,0,1); */
+    visibility: visible;
+    z-index:-5;
 background: radial-gradient(circle, rgba(0,255,0,1) 0%, rgba(0,255,0,0) 70%);
-visibility: visible;
-z-index:-5;
-transition: left 1s ease, top 1s ease; /* Smooth sliding animation */
-
+            transition: left 2s linear, top 2s linear;
 }
+
 
 .random-ball2 {
-    position: absolute;
-    width: calc(var(--v1) * 2.5);
-    height: calc(var(--v1) * 2.5);
-    border-radius: 50%;
-    animation: anim 2s linear infinite;
-    visibility: hidden;
-/*     transition: .1s; */
-    transform: translate(-50%, -50%);
-/*     box-shadow: 0px 0px 100px rgba(0,255,0,1); */
+  position: absolute;
+  width: calc(var(--v1) * 2.5);
+  height: calc(var(--v1) * 2.5);
+  border-radius: 50%;
+  animation: anim 2s linear infinite;
+  visibility: hidden;
+  z-index:-5;
 background: radial-gradient(circle, rgba(0,255,0,1) 0%, rgba(0,255,0,0) 70%);
-visibility: hidden;
-z-index:-5;
-transition: left 1s ease, top 1s ease; /* Smooth sliding animation */
-
+          transition: left 2s linear, top 2s linear;
 }
 
+@keyframes color-change {
+  0% {
+      filter: hue-rotate(0deg);
+  }
+  100% {
+      filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes move {
+  0% {
+      top: 0;
+      left: 0;
+  }
+  25% {
+      top: 0;
+      left: calc(100% - var(--v1) * 2.5);
+  }
+  50% {
+      top: calc(100% - var(--v1) * 2.5);
+      left: calc(100% - var(--v1) * 2.5);
+  }
+  75% {
+      top: calc(100% - var(--v1) * 2.5);
+      left: 0;
+  }
+  100% {
+      top: 0;
+      left: 0;
+  }
+}
 
 @media only screen and (max-width: 767px){
 
@@ -456,4 +478,110 @@ transition: left 1s ease, top 1s ease; /* Smooth sliding animation */
   .random-ball2{
     visibility: visible;
   }
+}
+
+
+
+/* TESTIMONIALS */
+.shadow-effect {
+  background: #fff;
+  padding: 10%;
+  border-radius: 4px;
+  text-align: center;
+border:1px solid #ECECEC;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.10), 0 15px 12px rgba(0,0,0,0.02);
+}
+#customers-testimonials .shadow-effect p {
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0 0 0 0;
+  font-weight: 300;
+}
+.testimonial-name {
+  margin: -4% auto 0;
+  display: table;
+  width: auto;
+  background: #3190E7;
+  padding: 9px 35px;
+  border-radius: 12px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 9px 18px rgba(0,0,0,0.12), 0 5px 7px rgba(0,0,0,0.05);
+}
+#customers-testimonials .item {
+  text-align: center;
+  padding: 50px;
+  margin-bottom:80px;
+  opacity: .2;
+  transform: scale3d(0.8, 0.8, 1);
+  transition: all 0.3s ease-in-out;
+}
+#customers-testimonials .owl-item.active.center .item {
+  opacity: 1;
+  transform: scale3d(1.0, 1.0, 1);
+}
+.owl-carousel .owl-item img {
+  transform-style: preserve-3d;
+  max-width: 90px;
+  margin: 0 auto 17px;
+}
+#customers-testimonials.owl-carousel .owl-dots .owl-dot.active span,
+#customers-testimonials.owl-carousel .owl-dots .owl-dot:hover span {
+  background: black;
+  transform: translate3d(0px, -50%, 0px) scale(0.7);
+}
+#customers-testimonials.owl-carousel .owl-dots{
+display: inline-block;
+width: 100%;
+text-align: center;
+}
+#customers-testimonials.owl-carousel .owl-dots .owl-dot{
+display: inline-block;
+}
+#customers-testimonials.owl-carousel .owl-dots .owl-dot span {
+  background: black;
+  display: inline-block;
+  height: 20px;
+  margin: 0 2px 5px;
+  transform: translate3d(0px, -50%, 0px) scale(0.3);
+  transform-origin: 50% 50% 0;
+  transition: all 250ms ease-out 0s;
+  width: 20px;
+}
+
+
+/*TESTIMONIAL 2 */
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600,700");
+
+
+
+.review-rating svg {
+  width: 14px;
+  color: gold;
+}
+
+
+
+.review-info span {
+  display: block;
+}
+
+.review-info .author-name {
+  font-size: 1.4em;
+  line-height: 1.6em;
+  font-weight: 600;
+}
+
+ .review-date {
+  opacity: .4;
+  font-size: .8em;
+}
+
+ .review-rating {
+  margin-bottom: 1em;
+}
+
+.more-text {
+  display: none;
 }

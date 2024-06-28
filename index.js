@@ -67,7 +67,6 @@ document.addEventListener('mousemove', function(e){
     curser.style.top = Y + "px";
 })
 
-// Select the random ball element
 const randomBall = document.querySelector('.random-ball');
 
 // Function to generate random coordinates within the viewport
@@ -75,7 +74,7 @@ function getRandomCoordinates() {
     const maxX = window.innerWidth - randomBall.offsetWidth;
     const maxY = window.innerHeight - randomBall.offsetHeight;
     const randomX = Math.random() * maxX;
-    const randomY = Math.random() * maxY;
+    const randomY = Math.random() * maxY; // Adjust y range to include the entire viewport height
     return { x: randomX, y: randomY };
 }
 
@@ -86,17 +85,20 @@ function moveRandomBall() {
     randomBall.style.top = `${y}px`;
 }
 
+// Set the transition for smooth movement
+randomBall.style.transition = 'left 2s linear, top 2s linear';
+
 // Move the random ball initially
 moveRandomBall();
 
-// Move the random ball every 3 seconds (adjust as needed)
-setInterval(moveRandomBall, 3000);
+// Move the random ball every 2 seconds
+setInterval(moveRandomBall, 2000);
+
 
 // Event listener to move the random ball on window resize (optional)
 window.addEventListener('resize', moveRandomBall);
 
 
-// Select the random ball element
 const randomBall2 = document.querySelector('.random-ball2');
 
 // Function to generate random coordinates within the viewport
@@ -104,7 +106,7 @@ function getRandomCoordinates2() {
     const maxX2 = window.innerWidth - randomBall2.offsetWidth;
     const maxY2 = window.innerHeight - randomBall2.offsetHeight;
     const randomX2 = Math.random() * maxX2;
-    const randomY2 = Math.random() * maxY2;
+    const randomY2 = Math.random() * maxY2; // Adjust y range to include the entire viewport height
     return { x: randomX2, y: randomY2 };
 }
 
@@ -115,11 +117,62 @@ function moveRandomBall2() {
     randomBall2.style.top = `${y}px`;
 }
 
+// Set the transition for smooth movement
+randomBall2.style.transition = 'left 2s linear, top 2s linear';
+
 // Move the random ball initially
 moveRandomBall2();
 
-// Move the random ball every 3 seconds (adjust as needed)
-setInterval(moveRandomBall2, 1000);
+// Move the random ball every 2 seconds
+setInterval(moveRandomBall2, 2000);
 
 // Event listener to move the random ball on window resize (optional)
 window.addEventListener('resize', moveRandomBall2);
+
+
+//TESTIMONIAL CAROUSEL
+jQuery(document).ready(function($) {
+    "use strict";
+    //  TESTIMONIALS CAROUSEL HOOK
+    $('#customers-testimonials').owlCarousel({
+        loop: true,
+        center: true,
+        items: 3,
+        margin: 0,
+        autoplay: true,
+        dots:true,
+        autoplayTimeout: 8500,
+        smartSpeed: 450,
+        responsive: {
+          0: {
+            items: 1
+          },
+          768: {
+            items: 2
+          },
+          1170: {
+            items: 3
+          }
+        }
+    });
+});
+
+
+//READ MORE FUNCTION
+document.addEventListener("DOMContentLoaded", function() {
+
+    const readMoreLinks = document.querySelectorAll('.read-more');
+
+    readMoreLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            const moreText = e.target.previousElementSibling.querySelector('.more-text');
+            if (moreText.style.display === 'none' || moreText.style.display === '') {
+                moreText.style.display = 'inline';
+                e.target.textContent = 'Read Less';
+            } else {
+                moreText.style.display = 'none';
+                e.target.textContent = 'Read More';
+            }
+        });
+    });
+});
