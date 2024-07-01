@@ -14,12 +14,6 @@ body{
     /* color:white; */
 }
 
-.content {
-    position: relative;
-    margin-top: 100vh; /* Start content below the hexagon container */
-    padding: 5%;
-    background-color: white;
-} 
 .grid-container{
     /* display:grid;
     grid-template-rows: 5fr 10fr 1fr; */
@@ -30,7 +24,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap:2rem;
+    gap:5rem;
 }
 
 .grid1{
@@ -44,21 +38,21 @@ body{
 #menuja{
     /* background-color: rgba(255, 255, 255, 0.425) ; */
     /* width:100%; */
-    background-color: rgba(0, 0, 0, 0.425) ;
+    /* background-color: rgba(0, 0, 0, 0.425) ; */
+    background-color: black;
+
     /* background-color: rgb(0, 0, 0) ; */
     font-size: 0.9rem;
     display: flex;
     flex-direction: row;
-    gap:4rem;
+    /* gap:4rem; */
     justify-content: center;
     /* padding-top: 1%;
     padding-bottom: 1%; */
-    z-index: 10;
+    z-index: 12;
 }
 
-#menuja:hover{
-  background-color: black;
-}
+
 .container-fluid{
     gap:5rem;
     color:white !important;
@@ -87,6 +81,20 @@ nav ul{
   color:white;
 }
 
+#menuja a:hover{
+  color:white;
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
+
+.activated{
+  color:white !important;
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
+
 .main-logo{
   /* width:31%; */
   height:2rem;
@@ -100,7 +108,7 @@ nav ul{
     display:flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     width:100%;
     text-align:center;
     /* font-family: "Playfair Display SC", serif;
@@ -108,13 +116,18 @@ nav ul{
     font-style: normal; */
     font-family: "Alegreya SC", serif;
     font-weight: 400;
+    padding:5%;
   }
   .overlay-h1{
     width:50%;
-    align-items: center;
     font-size: 3rem;
+    align-self: flex-start;
   }
 
+  .overlay h1{
+    align-self:flex-start;
+    text-align: left;
+  }
   .mainbutton{
     /* border-width:0.15rem; */
     /* border-color: #503C3C  ; */
@@ -127,11 +140,33 @@ nav ul{
     align-self: center;
 
 }
+
+
 .mainbutton:hover{
-  background-color: white !important;
-  color:#503C3C ;
+  text-decoration: none;
+  background-color:#5b2fc29c;
+  border-width: 4rem !important;
+  border-color:white !important;
+
+}
+.content {
+  position: relative;
+  margin-top: 100vh; /* Start content below the hexagon container */
+  background-color: white;
+      /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:5rem; */
+} 
+
+.nr-div{
+  padding-top:5rem;
 }
 
+#three{
+  padding-top:2%;
+}
 .seksioni-2-cont {
     margin-top:5%;
     display: flex;
@@ -141,15 +176,7 @@ nav ul{
     width:100%;
     gap:2rem;
   }
-      .contact-header{
-        top:0 !important;
-        margin-top:5%;
-        /* padding-top:5%; */
-        padding-bottom:4%;
-        /* background-color: #826464; */
-        width:100% ;
-        z-index: -2;
-      }
+
 
       h1{
    padding-top:2%;
@@ -163,6 +190,128 @@ nav ul{
 }
 
 
+#two{
+  /* padding-top:5%;
+  padding-bottom:5%; */
+}
+
+.about-us{
+  display:flex;
+  flex-direction: row;
+  gap:2rem;
+}
+
+
+.left-column{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap:0.5rem;
+  width:50%;
+}
+
+.line{
+  font-weight:900;
+  color:#E6105E;
+  text-shadow: 0px 1px, 1px 0px, 1px 1px;
+
+}
+
+.right-column{
+  width:50%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:2rem;
+}
+
+.counter{
+  padding-top:5%;
+  /* margin-top:5%; */
+  font-family: "Montserrat", sans-serif;
+}
+
+.shifrat-title{
+  font-size:2rem;
+  font-family: "Alegreya SC", serif;
+  font-weight: 600;
+  font-style: normal;
+  /* color:#473C38; */
+}
+
+.counter-h3  {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+ }
+
+.counter
+{
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.shifrat{
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction: row;
+  gap: 4rem;
+
+}
+.counter-count 
+{
+    font-size: 5rem;
+    font-weight: bold;
+    position: relative;
+    color: #000000;
+    text-align: center;
+    display: inline-block;
+}
+
+.shenja-plus{
+  font-size:4rem;
+}
+
+#three{
+  margin-left:0;
+  margin-right:0;
+  padding-left:0;
+  padding-right:0;
+}
+
+
+.carousel{
+  position: relative;
+}
+
+
+
+.carousel-caption{
+  position:absolute;
+  top:20%;
+  /* right:0; */
+  text-align: start;
+  left:5%;
+  width:100%;
+  padding:5%;
+}
+
+
+.carousel-item img{
+  /* height:100vh; */
+  width:100%;
+}
+.carousel-overlay h6{
+  position: absolute !important;
+  top: 70% !important;
+  text-align: start;
+  right:0;
+  left:10% !important;
+  color:red;
+  z-index:10;
+  font-size:5rem;
+}
 .form-flex{
   display:flex;
   flex-direction: row;
@@ -190,7 +339,15 @@ nav ul{
 .label{
     font-size: 0.9rem;
 }
-
+.contact-header{
+  top:0 !important;
+  margin-top:5%;
+  /* padding-top:5%; */
+  padding-bottom:4%;
+  /* background-color: #826464; */
+  width:100% ;
+  z-index: -2;
+}
 .contact{
   list-style: none;
   text-decoration: none !important;
@@ -211,6 +368,7 @@ nav ul{
   justify-content: center;
   /* text-align:start; */
 }
+
 
 
 @media screen and (max-width: 767px){
@@ -370,13 +528,7 @@ button.hexagon{
 .blank{
     background: transparent;
 }
-button.hexagon{
-    background: #2C093AA9;
-}
-button.hexagon:hover{
-    color: rgba(25, 25, 25, 1);
-    background: #2C093A40;
-}
+
 .row-h:nth-child(even){
     margin-left: calc(var(--v1) * 0.02);
 }
@@ -503,7 +655,7 @@ border:1px solid #ECECEC;
   display: table;
   width: auto;
   background: #3190E7;
-  padding: 9px 35px;
+  padding: 5% 10%;
   border-radius: 12px;
   text-align: center;
   color: #fff;
@@ -511,8 +663,8 @@ border:1px solid #ECECEC;
 }
 #customers-testimonials .item {
   text-align: center;
-  padding: 50px;
-  margin-bottom:80px;
+  padding: 10%;
+  /* margin-bottom:4%; */
   opacity: .2;
   transform: scale3d(0.8, 0.8, 1);
   transition: all 0.3s ease-in-out;
@@ -521,11 +673,7 @@ border:1px solid #ECECEC;
   opacity: 1;
   transform: scale3d(1.0, 1.0, 1);
 }
-.owl-carousel .owl-item img {
-  transform-style: preserve-3d;
-  max-width: 90px;
-  margin: 0 auto 17px;
-}
+
 #customers-testimonials.owl-carousel .owl-dots .owl-dot.active span,
 #customers-testimonials.owl-carousel .owl-dots .owl-dot:hover span {
   background: black;
@@ -542,12 +690,12 @@ display: inline-block;
 #customers-testimonials.owl-carousel .owl-dots .owl-dot span {
   background: black;
   display: inline-block;
-  height: 20px;
-  margin: 0 2px 5px;
+  height: 1.4rem;
+  margin: 0 2% 5%;
   transform: translate3d(0px, -50%, 0px) scale(0.3);
   transform-origin: 50% 50% 0;
   transition: all 250ms ease-out 0s;
-  width: 20px;
+  width: 1.2rem;
 }
 
 
@@ -576,6 +724,8 @@ display: inline-block;
  .review-date {
   opacity: .4;
   font-size: .8em;
+  display:inline-block;
+  width:100%;
 }
 
  .review-rating {
@@ -584,4 +734,12 @@ display: inline-block;
 
 .more-text {
   display: none;
+}
+
+
+.review-date img {
+  width:0.6rem;
+  height: 0.6rem;
+  opacity: 1;
+
 }

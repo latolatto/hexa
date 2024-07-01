@@ -5,8 +5,20 @@
 // }
 
   
+window.onload = function () {
+  window.scrollTo(0, 0);
+};
+
 
 document.getElementById("year").innerHTML = new Date().getFullYear();
+
+
+$(".nav-link").on("click",function(){
+    $("a.activated").removeClass("activated");
+    $(this).addClass("activated");
+})
+
+//contact button
 
 
 // Function to handle form submission
@@ -176,3 +188,67 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+
+
+//COUNTER FUNCTION
+$(window).on('scroll', function(e) {
+  if ($(window).scrollTop() >= ($(".counter").offset().top - ($(window).height()))) {
+      if (!$(".counter").hasClass("animated")) {
+          $('.counter-count').each(function() {
+              var $this = $(this);
+              var targetValue = parseInt($this.text().replace('+', ''));
+
+              $this.prop('Counter', 0).animate({
+                  Counter: targetValue
+              }, {
+                  duration: 2000,
+                  easing: 'swing',
+                  step: function(now) {
+                      $this.text(Math.ceil(now));
+                  },
+                  complete: function() {
+                      $this.text(targetValue + '+');
+                  }
+              });
+          });
+          $(".counter").addClass("animated");
+      }
+  }
+});
+
+// Reset the counter animation when the page is refreshed
+$(window).on('beforeunload', function() {
+  $('.counter').removeClass('animated');
+  $('.counter-count').each(function() {
+      var $this = $(this);
+      $this.text($this.text().replace('+', '')); // Remove the plus sign if it exists
+  });
+});
+
+
+
+
+
+//   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+//     anchor.addEventListener('click', function (e) {
+//         e.preventDefault();
+
+//         const targetId = this.getAttribute('href').substring(1);
+//         const targetElement = document.getElementById(targetId);
+
+//         if (targetElement) {
+//             const divOffset = document.getElementById('one').offsetHeight;
+//             const targetOffset = targetElement.getBoundingClientRect().top + window.scrollY;
+
+//             window.scrollTo({
+//                 top: targetOffset - divOffset,
+//                 behavior: 'smooth'
+//             });
+//         }
+//     });
+// });
+
+
+
+
