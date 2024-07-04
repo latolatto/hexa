@@ -49,6 +49,8 @@ const result = document.getElementById('result');
                 let json = await response.json();
                 if (response.status == 200) {
                     result.innerHTML = "Thank you for your message! We will get back to you via email as soon as possible!";
+                    result.style.visibility = 'visible'; // Show the message
+
                 } else {
                     console.log(response);
                     result.innerHTML = json.message;
@@ -61,7 +63,9 @@ const result = document.getElementById('result');
             .then(function() {
                 form.reset();
                 setTimeout(() => {
-                    result.style.display = "none";
+                    // result.style.display = "none";
+                    result.style.visibility = 'hidden';
+                    
                 }, 3000);
 
 
@@ -248,7 +252,5 @@ $(window).on('beforeunload', function() {
 //         }
 //     });
 // });
-
-
 
 
