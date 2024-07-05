@@ -131,22 +131,22 @@ nav ul{
     justify-content: center;
     align-items: flex-start;
     width:100%;
-    text-align:center;
+    text-align:left;
     /* font-family: "Playfair Display SC", serif;
     font-weight: 700;
     font-style: normal; */
    font-weight: 400;
     padding:5%;
   }
-  .overlay-h1{
-    width:50%;
-    font-size: 3rem;
-    align-self: flex-start;
-  }
+
 
   .overlay h1{
     align-self:flex-start;
     text-align: left;
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    /* font-size:5rem; */
   }
 
   .overlay h3{
@@ -163,9 +163,10 @@ nav ul{
      font-style: normal; */
      font-size:4rem;
      display:flex;
-     width:100%;
+     /* width:100%; */
      justify-content: center;
      line-height: 0.9;
+
  }
  
  #fade-in-text {
@@ -187,6 +188,7 @@ nav ul{
     /* border-color: #503C3C  ; */
     /* border-color: rgba(255, 255, 255, 0.692) !important  ; */
     background-color:#7b4ce79c;
+    /* background-color:#303ef7; */
     /* background-color:#4F46E5 !important; */
     /* background-color: linear-gradient(to top right, #1325e8 -5%, #8f10b7 100%); */
     color:white ;
@@ -265,6 +267,14 @@ nav ul{
 
 .left-column span{
   padding-bottom:2%;
+}
+
+.left-column h4{
+  font-weight: 600;
+}
+
+.left-column h4{
+  font-weight: 500;
 }
 .line{
   font-weight:900;
@@ -352,7 +362,7 @@ nav ul{
   padding:5%;
     /* font-family: "Montserrat", sans-serif; */
     font-family: "Bai Jamjuree", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
 
 }
@@ -371,18 +381,48 @@ nav ul{
   color:white;
   z-index:10;
   font-size:5rem;
-  /* font-family: "Montserrat", sans-serif; */
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
   color: white;
   /* -webkit-text-stroke: 1px white; 
   text-stroke: 1px white;  */
   font-family: "Bai Jamjuree", sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   font-style: normal;
 }
 
+
+#four{
+  padding-left:5%;
+  padding-right:5%;
+}
+
+.serv-line{
+  text-align: center;
+  padding-bottom:3%;
+  margin-bottom:0;
+  font-weight:900;
+  color:#E6105E;
+  text-shadow: 0px 1px, 1px 0px, 1px 1px;
+
+}
+
+.serv-intro{
+  color:#818181;
+  text-align: center;
+  padding-bottom:3%;
+}
+
+.services-ul{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  width:100%;
+  padding-left:0;
+}
+
+.services-ul li{
+  list-style: none;
+  text-align: center;
+}
 
 #five{
   /* font-family: "Beiruti", sans-serif;
@@ -392,6 +432,26 @@ nav ul{
   /* font-family: "Roboto", sans-serif;
   font-weight: 100;
   font-style: normal; */
+  margin-bottom:4%;
+}
+
+.test-line{
+  text-align: center;
+  padding-bottom:0;
+  margin-bottom:0;
+  font-weight:900;
+  color:#E6105E;
+  text-shadow: 0px 1px, 1px 0px, 1px 1px;
+
+}
+.test-title{
+  text-align: center;
+  padding-bottom:0;
+  margin-bottom:0;
+    /* font-family: "Montserrat", sans-serif; */
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .author-name{
@@ -409,6 +469,8 @@ nav ul{
   font-style: normal;
 
 }
+
+
 
 #six{
   margin: 0;
@@ -536,6 +598,8 @@ nav ul{
 
 
 
+
+
 .socials li {
   position: relative; 
   display: flex;
@@ -549,7 +613,6 @@ nav ul{
   background-color: rgb(27,27,27);
   cursor: pointer; 
   transition: all .2s ease-in-out;
-  
 }
 
 .socials li:after {
@@ -583,13 +646,7 @@ nav ul{
 
 }
 
-.social-icon{
-  fill:red !important;
-}
 
-.social-icon:hover{
-fill:blue !important;
-}
 @media screen and (max-width: 767px){
 
 
@@ -841,9 +898,11 @@ background: radial-gradient(circle, rgba(0,255,0,1) 0%, rgba(0,255,0,0) 70%);
 
 
 /* TESTIMONIALS */
+
+
 .shadow-effect {
   background: #fff;
-  padding: 10%;
+  padding: 5%;
   border-radius: 4px;
   text-align: center;
 border:1px solid #ECECEC;
@@ -870,6 +929,8 @@ border:1px solid #ECECEC;
 #customers-testimonials .item {
   text-align: center;
   padding: 10%;
+  padding-top:9%;
+  padding-bottom:9%;
   /* margin-bottom:4%; */
   opacity: .2;
   transform: scale3d(0.8, 0.8, 1);
@@ -923,7 +984,7 @@ display: inline-block;
 
 .review-info .author-name {
   font-size: 1.4em;
-  line-height: 1.6em;
+  line-height: 1.4em;
   font-weight: 600;
 }
 
@@ -952,3 +1013,55 @@ display: inline-block;
 
 
 
+/*OUR SERVICS */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+.services-h3{
+  font-size:2rem;
+  font-family: "Bai Jamjuree", sans-serif;
+font-weight: 600;
+font-style: normal;
+text-align: center;
+line-height: 1rem;
+}
+
+
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+}
+
+.service {
+  text-align: center;
+  padding: 25px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  background: transparent;
+  transition: transform 0.5s, background 0.5s;
+}
+
+.service i {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #303ef7;
+}
+
+.service h2 {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.service:hover {
+  background: #303ef7;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.service:hover i {
+  color: #fff;
+}

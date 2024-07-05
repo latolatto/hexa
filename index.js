@@ -233,24 +233,22 @@ $(window).on('beforeunload', function() {
 
 
 
-
-//   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-//     anchor.addEventListener('click', function (e) {
-//         e.preventDefault();
-
-//         const targetId = this.getAttribute('href').substring(1);
-//         const targetElement = document.getElementById(targetId);
-
-//         if (targetElement) {
-//             const divOffset = document.getElementById('one').offsetHeight;
-//             const targetOffset = targetElement.getBoundingClientRect().top + window.scrollY;
-
-//             window.scrollTo({
-//                 top: targetOffset - divOffset,
-//                 behavior: 'smooth'
-//             });
-//         }
-//     });
-// });
-
+//svg fill color change
+document.querySelectorAll('.socials li').forEach(item => {
+    const svg = item.querySelector('svg');
+  
+    item.addEventListener('mouseenter', () => {
+      if (svg) {
+        svg.style.fill = 'black'; // Change to your desired hover color
+      }
+    });
+  
+    item.addEventListener('mouseleave', () => {
+      if (svg) {
+        svg.style.fill = ''; // Reset to default or transparent if needed
+      }
+    });
+  });
+  
+  
 
