@@ -681,14 +681,14 @@ nav{
 }
 
 .contact-details{
-  width:fit-content;
+  width: fit-content;
   justify-content: center;
   align-items: center;
 }
 
 #two{
   margin-bottom: 5%;
-  padding-bottom:10%;
+  padding:10%;
 }
 
 .about-us{
@@ -712,37 +712,54 @@ h1{
   font-size:2.5rem;
 }
 
+
 #three h6{
   font-size:2rem;
   top:80%;
 }
 
+
+#four{
+  padding:10%;
+}
+
+
+#five{
+  padding-bottom: 5%;
+}
+
+
+#six{
+  padding:10%;
+}
+
+
 .carousel-img{
-display:none;
-}
-
-.carousel-img-tel{
-  display:block;
-  height:100vh;
-}
-
-.left-column{
-  width: 100%;
-  align-items:center;
-  justify-content: center;
-  text-align: center;
-}
-
-.overlay h3{
-  font-size:1rem;
-}
-
-.right-column{
-  width:100%;
-  align-items:center;
-  justify-content: center;
-  text-align: center;
-}
+  display:none;
+  }
+  
+  .carousel-img-tel{
+    display:block;
+    height:100vh;
+  }
+  
+  .left-column{
+    width: 100%;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .overlay h3{
+    font-size:1rem;
+  }
+  
+  .right-column{
+    width:100%;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+  }
 
 .form-flex{
         display: flex;
