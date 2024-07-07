@@ -77,6 +77,7 @@ body{
 .container-fluid{
     gap:5rem;
     color:white !important;
+    background-color: rgba(255, 255, 255, 0) !important;
 }
 
 nav{
@@ -98,9 +99,6 @@ nav ul{
     justify-content: flex-end;
     color:white;
 }
-.navbar-brand{
-  color:white;
-}
 
 #menuja a:hover{
   color:white;
@@ -119,6 +117,10 @@ nav ul{
 .main-logo{
   /* width:31%; */
   height:2rem;
+}
+
+.navbar-brand{
+  padding-left:1%;
 }
 .overlay { 
     color:#fff;
@@ -187,8 +189,8 @@ nav ul{
     /* border-width:0.15rem; */
     /* border-color: #503C3C  ; */
     /* border-color: rgba(255, 255, 255, 0.692) !important  ; */
-    background-color:#7b4ce79c;
-    /* background-color:#303ef7; */
+    /* background-color:#7b4ce79c; */
+    background-color:#303ef7;
     /* background-color:#4F46E5 !important; */
     /* background-color: linear-gradient(to top right, #1325e8 -5%, #8f10b7 100%); */
     color:white ;
@@ -202,7 +204,7 @@ nav ul{
 
 .mainbutton:hover{
   /* text-decoration: none !important; */
-  background-color:#9a6fff9c;
+  background-color:#4d59fa;
   border-width: 4rem !important;
   border-color:white !important;
 
@@ -278,7 +280,7 @@ nav ul{
 }
 .line{
   font-weight:900;
-  color:#E6105E;
+  color:#303ef7;
   text-shadow: 0px 1px, 1px 0px, 1px 1px;
 
 }
@@ -351,7 +353,6 @@ nav ul{
 }
 
 
-
 .carousel-caption{
   position:absolute;
   top:20%;
@@ -368,13 +369,19 @@ nav ul{
 }
 
 
-.carousel-item img{
+.carousel-img{
   /* height:100vh; */
   width:100%;
 }
+
+.carousel-img-tel{
+display:none;
+}
+
+
 .carousel-overlay h6{
   position: absolute !important;
-  top: 70% !important;
+  top: 70% ;
   text-align: start;
   right:0;
   left:10% !important;
@@ -393,6 +400,7 @@ nav ul{
 #four{
   padding-left:5%;
   padding-right:5%;
+  padding-bottom:5%;
 }
 
 .serv-line{
@@ -400,7 +408,7 @@ nav ul{
   padding-bottom:3%;
   margin-bottom:0;
   font-weight:900;
-  color:#E6105E;
+  color:#303ef7;
   text-shadow: 0px 1px, 1px 0px, 1px 1px;
 
 }
@@ -440,7 +448,7 @@ nav ul{
   padding-bottom:0;
   margin-bottom:0;
   font-weight:900;
-  color:#E6105E;
+  color:#303ef7;
   text-shadow: 0px 1px, 1px 0px, 1px 1px;
 
 }
@@ -516,12 +524,13 @@ nav ul{
   border-radius: 10px; /* Adjust the value to make the border more or less rounded */
   width:auto; /* Adjust width as needed */
   box-sizing: border-box;
-  background-color:#7b4ce79c;  color:white;
+  background-color:#303ef7;  
+  color:white;
   align-self: center;
 }
 
 .submit-button:hover{
-  background-color:#9a6fff9c;
+  background-color:#4d59fa;
   color:white;
 }
 .contact-form{
@@ -563,6 +572,10 @@ nav ul{
   transition-duration: 0.2s;
  color: #fff;
   text-decoration: none;
+}
+
+.contact:hover{
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff;
 }
 
 
@@ -649,6 +662,87 @@ nav ul{
 
 @media screen and (max-width: 767px){
 
+nav{
+  display:flex;
+  flex-direction:row;
+  width:100%;
+  justify-content: space-between;
+}
+
+.navbar{
+  flex-wrap:nowrap;
+}
+
+.navbar-brand{
+  align-self: start;
+}
+.navbar-collapse{
+  width:30%;
+}
+
+.contact-details{
+  width:fit-content;
+  justify-content: center;
+  align-items: center;
+}
+
+#two{
+  margin-bottom: 5%;
+  padding-bottom:10%;
+}
+
+.about-us{
+  display:flex;
+  flex-direction:column;
+  width:100%;
+  align-items:center;
+  justify-content: center;
+  text-align: center;
+}
+
+.about-us h4{
+  text-align: center !important;
+}
+
+.counter{
+  /* box-shadow: 0 .25rem .5rem rgba(0, 0, 0, .1); */
+
+}
+h1{
+  font-size:2.5rem;
+}
+
+#three h6{
+  font-size:2rem;
+  top:80%;
+}
+
+.carousel-img{
+display:none;
+}
+
+.carousel-img-tel{
+  display:block;
+  height:100vh;
+}
+
+.left-column{
+  width: 100%;
+  align-items:center;
+  justify-content: center;
+  text-align: center;
+}
+
+.overlay h3{
+  font-size:1rem;
+}
+
+.right-column{
+  width:100%;
+  align-items:center;
+  justify-content: center;
+  text-align: center;
+}
 
 .form-flex{
         display: flex;

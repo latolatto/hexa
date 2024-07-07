@@ -33,35 +33,37 @@
    <div class="grid-container">
      <div class="grid1 " id="one">
        <div class=" fixed-top"id="menuja" style="color:white !important;">
+        <!-- <div class="nav-logo navbar-brand"><a class="activated  logo-href act-link nav-link" id="nav-item" href="#one"><img class="main-logo"  src="./assets/navbar-brand.svg" alt="logo"></a></div> -->
          <nav class="navbar navbar-expand-lg ">
-           <div class="container-fluid">
-             <div class="nav-logo navbar-brand"><a class="activated  logo-href act-link nav-link" id="nav-item" href="#one"><img class="main-logo"  src="./assets/navbar-brand.svg" alt="logo"></a></div>
-             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-             </button>
-             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-               <ul class="navbar-nav  mb-2 mb-lg-0"  >
-                 <li class="nav-item">
-                   <a class=" act-link nav-link  " id="nav-item" href="#two">ABOUT US </a>
+          <div class="nav-logo navbar-brand"><a class="activated  logo-href act-link nav-link" id="nav-item" href="#one"><img class="main-logo"  src="./assets/navbar-brand.svg" alt="logo"></a></div>
+          <div class="container-fluid">
+            <!-- <div class="nav-logo navbar-brand"><a class="activated  logo-href act-link nav-link" id="nav-item" href="#one"><img class="main-logo"  src="./assets/navbar-brand.svg" alt="logo"></a></div> -->
+            <button class="navbar-toggler"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon" style="color:white"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+              <ul class="navbar-nav  mb-2 mb-lg-0"  >
+                <li class="nav-item">
+                  <a class=" act-link nav-link  " id="nav-item" href="#two">ABOUT US </a>
+                </li>
+                <li class="nav-item">
+                   <a class=" act-link nav-link  " id="nav-item" href="#three">OUR WORK </a>
                  </li>
                  <li class="nav-item">
-                    <a class=" act-link nav-link  " id="nav-item" href="#three">OUR WORK </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class=" act-link nav-link  " id="nav-item" href="#four"> SERVICES</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="act-link nav-link" id="nav-item" href="#five">TESTIMONIALS</a>
-                  </li>
-                  <!-- <li class="nav-item " >
-                    <a class="act-link nav-link" href="./contact.html"id="#six">CONTACT</a>
-                  </li> -->
-                  <li class="nav-item " >
-                    <a class="btn me-2 mainbutton act-link nav-link" id="contact-btn " type="button" role="button" href="#six">CONTACT</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
+                   <a class=" act-link nav-link  " id="nav-item" href="#four"> SERVICES</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="act-link nav-link" id="nav-item" href="#five">TESTIMONIALS</a>
+                 </li>
+                 <!-- <li class="nav-item " >
+                   <a class="act-link nav-link" href="./contact.html"id="#six">CONTACT</a>
+                 </li> -->
+                 <li class="nav-item " >
+                   <a class="btn me-2 mainbutton act-link nav-link" id="contact-btn " type="button" role="button" href="#six">CONTACT</a>
+                 </li>
+               </ul>
+             </div>
+           </div>
           </nav>
         </div>
         <div class="overlay" >
@@ -269,7 +271,7 @@
             <h4>ABOUT US</h4>
             <p class="line">______</p>
             <h3>We help businesses grow through Organic Strategies and Paid Advertising</h3>
-            <p>Hexa Marketing is a dynamic social media marketing agency dedicated to driving brand growth through innovative strategies and creative content. Our team  is passionate about helping businesses achieve their goals with tailored social media solutions.</p>
+            <p>Hexa Marketing is a dynamic marketing agency dedicated to driving brand growth through innovative strategies and creative content. Our team  is passionate about helping businesses achieve their goals with tailored social media solutions.</p>
             <!-- <span>Check out our Behance Portfolio.</span> -->
             <span>Ready to elevate your brand? Get in touch today!</span>
             <a href="#six" type="button" class="btn btn-dark p-3"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
@@ -304,7 +306,7 @@
         </div>
         <div id="three" class="nr-div">
           <!--OUR WORK-->
-          <div id="carouselExampleCaptions" class="carousel slide">
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" >
             <div class="carousel-overlay">
               <h6>OUR WORK</h6>
             </div>
@@ -316,38 +318,43 @@
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
             </div>
             <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./assets/Untitled design.png" class="d-block w-100" alt="...">
+              <div class="carousel-item active" data-bs-interval="3500">
+                <img src="./assets/Untitled design.png" class=" carousel-img" alt="...">
+                <img src="./assets/tel/1.png" class=" carousel-img-tel" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                   <!-- <p>Some representative placeholder content for the first slide.</p> -->
                   <!-- <h5>Our Work</h5> -->
                 </div>
               </div>
-              <div class="carousel-item">
-                <img src="./assets/carusel2.png" class="d-block w-100" alt="...">
+              <div class="carousel-item" data-bs-interval="3500">
+                <img src="./assets/carusel2.png" class="  carousel-img" alt="..." >
+                <img src="./assets/tel/2.png" class=" carousel-img-tel" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                   <p>Some representative placeholder content for the second slide.</p>
                   <!-- <h5>Our Work</h5> -->
                 </div>
               </div>
-              <div class="carousel-item">
-                <img src="./assets/carusel3.png" class="d-block w-100" alt="...">
+              <div class="carousel-item" data-bs-interval="3500">
+                <img src="./assets/carusel3.png" class="  carousel-img" alt="...">
+                <img src="./assets/tel/3.png" class=" carousel-img-tel" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                   <p>Some representative placeholder content for the third slide.</p>
                   <!-- <h5>Our Work</h5> -->
                 </div>
               </div>
-              <div class="carousel-item">
-                <img src="./assets/carusel4.png" class="d-block w-100" alt="...">
+              <div class="carousel-item" data-bs-interval="3500">
+                <img src="./assets/carusel4.png" class="  carousel-img" alt="...">
+                <img src="./assets/tel/4.png" class=" carousel-img-tel" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <p>Some representative placeholder content for the third slide.</p>
+                  <p>Some representative placeholder content for the fourth slide.</p>
                   <!-- <h5>Our Work</h5> -->
                 </div>
               </div>
-              <div class="carousel-item">
-                <img src="./assets/carusel5.png" class="d-block w-100" alt="...">
+              <div class="carousel-item" data-bs-interval="3500">
+                <img src="./assets/carusel5.png" class=" carousel-img" alt="...">
+                <img src="./assets/tel/5.png" class=" carousel-img-tel" alt="...">     
                 <div class="carousel-caption d-none d-md-block">
-                  <p>Some representative placeholder content for the third slide.</p>
+                  <p>Some representative placeholder content for the fifth slide.</p>
                   <!-- <h5>Our Work</h5> -->
                 </div>
               </div>
@@ -361,13 +368,14 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
+          
         </div>
-        <div id="four" class="nr-div">
+        <div id="four" class="nr-div border-bottom container" >
           <!--SERVICES-->
           <div class="container">
             <h3 class="services-h3">OUR SERVICES</h3>
             <p class="serv-line">___________</p>
-            <p class="serv-intro">Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry's<br>standard dummy text ever since the 1500s, when an unknown book.</p>
+            <p class="serv-intro">At Hexa Marketing, we specialize in elevating your brand through innovative strategies and impactful digital marketing solutions. <br>Our dedicated team ensures your brand stands out, engages your audience, and achieves measurable success.</p>
             <div class="row">
               <div class="service">
                 <i class="fas fa-laptop-code"></i>
@@ -503,7 +511,7 @@
                       <div class="shadow-effect">
                         <div class="review-info"> 
                           <span class="review-date">May 14, 2018</span>
-                          <span class="author-name">Gypsum Work & Decorative Painting</span>
+                          <span class="author-name">Dry Wall Work & Decorative Painting</span>
                           <span class="review-rating">
                             <svg class="svg-inline--fa fa-star fa-w-18 final-star" aria-hidden="true" data-prefix="fa" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
                             <svg class="svg-inline--fa fa-star fa-w-18 final-star" aria-hidden="true" data-prefix="fa" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
@@ -526,8 +534,8 @@
                     <div class="item">
                       <div class="shadow-effect">
                         <div class="review-info"> 
-                          <span class="review-date">May 14, 2018</span>
-                          <span class="author-name">Alexis Starnes</span>
+                          <span class="review-date">Jul 06, 2024</span>
+                          <span class="author-name">ALS Klima</span>
                           <span class="review-rating">
                             <svg class="svg-inline--fa fa-star fa-w-18 final-star" aria-hidden="true" data-prefix="fa" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
                             <svg class="svg-inline--fa fa-star fa-w-18 final-star" aria-hidden="true" data-prefix="fa" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
@@ -538,7 +546,7 @@
                         </div>
                         <div class="widget-review-body">
                           <div class="review-body">
-                            <span>"I have only been working with Pam for about 3 weeks and can already feel a huge improvement to my body and mood. This is my first experience..."</span>
+                            <span>"I have collaborated with many marketing agencies, but with Hexa Marketing, I have found fair pricing, reliability, and fantastic work. Wishing you much success."</span>
                             <br>
                             <span class="review-date"><img src="./assets/al.svg"></span>
                           </div>
@@ -561,9 +569,9 @@
           <div class="form-flex">
             <!--form-->
             <form class="contact-form " method="POST" action="https://api.web3forms.com/submit" id="form">
-              <input type="hidden" name="access_key" value="ebe59053-0f8d-457f-8f05-d9c7b5b2b02a">
+              <input type="hidden" name="access_key" value="31f3b2fd-3e55-49a1-a839-1612954d72ec">
               <input type="hidden" name="subject" value="New message from website">
-              <input type="hidden" name="from_name" value="Drutech.co">
+              <input type="hidden" name="from_name" value="Hexa Marketing">
               <input type="hidden" name="replyto" value=''>
               <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
               <br>
@@ -580,9 +588,9 @@
               <br>
               <button class="submit-button btn  btn-sm " type="submit" >Send</button>
               <br>
-              <div id='result' style="font-size:0.8rem;font-weight: 700;color:#9a6fff9c;"></div>
+              <div id='result' style="font-size:0.8rem;font-weight: 700;color:#303ef7;"></div>
             </form>
-            <div class="contact-details">
+            <div class="contact-details container">
               <li  class="contact"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-envelope" viewBox="0 0 16 16">
                 <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
                 </svg> <a class="contact" href = "mailto: toshi.lazime@gmail.com" target="_blank">toshi.lazime@gmail.com</a>  
