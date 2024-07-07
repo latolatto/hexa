@@ -682,7 +682,7 @@ nav{
 }
 
 .contact-details{
-  width: fit-content;
+  width: 90%;
   justify-content: center;
   align-items: center;
 }
