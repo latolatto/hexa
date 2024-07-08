@@ -31,7 +31,7 @@ body{
     /* background: black; */
     /* overflow: hidden; */
     /* min-height: 100vh; */
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     /* color:white; */
 }
 
@@ -692,6 +692,7 @@ nav{
   padding:10%;
 }
 
+
 .about-us{
   display:flex;
   flex-direction:column;
@@ -704,6 +705,7 @@ nav{
 .about-us h4{
   text-align: center !important;
 }
+
 
 .counter{
   /* box-shadow: 0 .25rem .5rem rgba(0, 0, 0, .1); */
@@ -719,7 +721,6 @@ h1{
   top:80%;
 }
 
-
 #four{
   padding:10%;
 }
@@ -734,7 +735,6 @@ h1{
   padding:10%;
 }
 
-
 .carousel-img{
   display:none;
   }
@@ -742,25 +742,10 @@ h1{
   .carousel-img-tel{
     display:block;
     height:100vh;
-  }
-  
-  .left-column{
-    width: 100%;
-    align-items:center;
-    justify-content: center;
-    text-align: center;
-  }
-  
-  .overlay h3{
-    font-size:1rem;
-  }
-  
-  .right-column{
     width:100%;
-    align-items:center;
-    justify-content: center;
-    text-align: center;
   }
+  
+
 
 .form-flex{
         display: flex;
