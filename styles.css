@@ -735,7 +735,7 @@ display:none;
     gap:1rem;
     justify-content: center;
     align-items:center;
-    padding-bottom:2%;
+    padding-bottom:3%;
     padding-top:2%;
   }
     .nav-logo {
@@ -744,6 +744,10 @@ display:none;
       justify-content: center;
       order: 1; */
       grid-column: 2/3;
+      align-self: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
   
     .navbar{
@@ -756,6 +760,8 @@ display:none;
       /* order: -1;
       z-index: 9; */
       grid-column: 1/2;
+      padding-bottom:0;
+      padding-top:0;
   
   
   }
@@ -805,7 +811,7 @@ display:none;
 }
 
 @media screen and (max-width: 767px){
-.dropdown-lang ul{
+.dropdown-menu.show ul{
   display:flex;
   flex-direction: column;
   width:10%;
