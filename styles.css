@@ -361,6 +361,9 @@ nav ul{
 
 .left-column span{
   padding-bottom:2%;
+  text-align: center;
+  width:100%;
+  align-self: center;
 }
 
 .left-column h4{
