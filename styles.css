@@ -361,9 +361,7 @@ nav ul{
 
 .left-column span{
   padding-bottom:2%;
-  text-align: center;
-  width:100%;
-  align-self: center;
+  
 }
 
 .left-column h4{
@@ -840,6 +838,7 @@ display:none;
     width:10%;
   }
   
+
   
   .contact-details{
     width: 90%;
@@ -859,6 +858,12 @@ display:none;
     align-content: center;
   }
   
+  .left-column span{
+    text-align: center;
+  width:100%;
+  align-self: center;
+  }
+
   .about-us{
     display:flex;
     flex-direction:column;
