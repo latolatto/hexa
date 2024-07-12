@@ -174,7 +174,7 @@ nav ul{
   opacity: .4;
 }
 .overlay { 
-    color:#fff;
+    color:#ffffffdb;
     position:absolute;
     z-index:12;
     top:45%;
@@ -214,22 +214,22 @@ nav ul{
      /* font-family: "Alegreya SC", serif;
      font-weight: 600;
      font-style: normal; */
-     font-size:6.59rem;
+     font-size:6.5rem;
      display:flex;
      /* width:100%; */
      justify-content: center;
      line-height: 0.5;
-     font-family: "Roboto", sans-serif !important;
-     font-weight: 550 !important;
+     font-family: "Dela Gothic One", sans-serif !important;
+     font-weight: 60 !important;
      font-style: normal;
 
  }
  
- .overlay h3{
-  font-size:3rem;
-  line-height: 0.2;
-  font-family: "Roboto", sans-serif !important;
-  font-weight: 550 !important;
+ .main-title{
+  font-size:2.8rem;
+  line-height: 0.4;
+  font-family: "Dela Gothic One", sans-serif !important;
+  font-weight: 60 !important;
   font-style: normal;
  }
  
@@ -344,6 +344,7 @@ nav ul{
   font-weight:900;
   color:#303ef7;
   text-shadow: 0px 1px, 1px 0px, 1px 1px;
+  line-height: 0.2;
 
 }
 
@@ -457,8 +458,13 @@ display:none;
   /* -webkit-text-stroke: 1px white; 
   text-stroke: 1px white;  */
   font-family: "Bai Jamjuree", sans-serif;
-  font-weight: 500;
+  font-weight: 700;
   font-style: normal;
+  /* text-shadow: 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000; */
 }
 
 
@@ -568,11 +574,11 @@ display:none;
 } 
 .input-form {
   padding:  2%; /* Adjust padding as needed */
-  border: 1px solid #ccc; /* Adjust border color and width as needed */
+  border: 2px solid #ccc; /* Adjust border color and width as needed */
   border-radius: 10px; /* Adjust the value to make the border more or less rounded */
   width: 100%; /* Adjust width as needed */
   box-sizing: border-box;
-  background-color: rgba(255, 255, 255, 0);
+  /* background-color: rgba(255, 255, 255, 0); */
   color:white;
 }
 
