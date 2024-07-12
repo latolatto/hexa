@@ -177,7 +177,7 @@ nav ul{
     color:#ffffffdb;
     position:absolute;
     z-index:12;
-    top:45%;
+    /* top:35%; */
     left:0;
     display:flex;
     flex-direction: column;
@@ -185,29 +185,14 @@ nav ul{
     align-items: center;
     width:100%;
     text-align:center;
-    /* font-family: "Playfair Display SC", serif;
-    font-weight: 700;
-    font-style: normal; */
-   font-weight: 400;
     padding:5%;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
 
-  .overlay h1{
-    /* align-self:flex-start; */
-    /* text-align: left; */
-    font-family: "Bai Jamjuree", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    /* font-size:5rem; */
-  }
 
-  .overlay h3{
-    /* font-size:1.5rem;
-    font-family: "Bai Jamjuree", sans-serif;
-  font-weight: 400;
-  font-style: normal; */
-  }
 
   h1{
     padding-top:2%;
@@ -233,20 +218,66 @@ nav ul{
   font-style: normal;
  }
  
- #fade-in-text {
-   opacity: 0;
- } 
+
+
+
+.text1 {
+  color: #ffffffcb;
+  /* font-size: 60px; */
+  /* font-weight: 700; */
+  letter-spacing: 2px;
+  /* background: black; */
+  position: relative;
+  animation-name: text;
+  animation-duration: 4s;
+  animation-iteration-count: 1; /* Play once */
+}
+
+.text2 {
+  /* font-size: 25px; */
+  color: #ffffff00; /* Initial color */
+  opacity: 1; /* Initially invisible */
+  animation-name: text2;
+  animation-duration: 2s; /* Animation duration */
+  animation-delay: 4s; /* Should match .text1 animation-duration */
+  animation-fill-mode: forwards;
+}
+
+@keyframes text {
+  0% {
+    color: black;
+    margin-bottom: -40px;
+  }
+  30% {
+    letter-spacing: 25px;
+    margin-bottom: -40px;
+  }
+  85% {
+    letter-spacing: 8px;
+    margin-bottom: -40px;
+  }
+  100% {
+    letter-spacing: 2px;
+    margin-bottom: 0; /* No margin between texts */
+  }
+}
+
+@keyframes text2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    color: #ffffffcb; /* End with white text color */
+  }
+}
 #menuja {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-.overlay{
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-}
+
   .mainbutton{
     /* border-width:0.15rem; */
     /* border-color: #503C3C  ; */
@@ -472,6 +503,9 @@ display:none;
   padding-left:5%;
   padding-right:5%;
   padding-bottom:5%;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .serv-line{
@@ -854,7 +888,7 @@ display:none;
   
   }
   h1{
-    font-size:2.5rem;
+    /* font-size:2.5rem; */
   }
   
   
