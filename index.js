@@ -203,3 +203,17 @@ document.querySelectorAll('.socials li').forEach(item => {
   
   
 
+
+
+    document.querySelectorAll('a[data-target]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const targetID = this.getAttribute('data-target');
+        const targetSection = document.getElementById(targetID);
+        
+        if (targetSection) {
+          targetSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
