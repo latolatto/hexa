@@ -205,18 +205,33 @@ document.querySelectorAll('.socials li').forEach(item => {
 
 
 
+    // document.querySelectorAll('a[data-target]').forEach(anchor => {
+    //   anchor.addEventListener('click', function(e) {
+    //     e.preventDefault();
+        
+    //     const targetID = this.getAttribute('data-target');
+    //     const targetSection = document.getElementById(targetID);
+        
+    //     if (targetSection) {
+    //       targetSection.scrollIntoView({ behavior: 'smooth' });
+    //     }
+    //   });
+    // });
+
+
     document.querySelectorAll('a[data-target]').forEach(anchor => {
       anchor.addEventListener('click', function(e) {
         e.preventDefault();
-        
         const targetID = this.getAttribute('data-target');
         const targetSection = document.getElementById(targetID);
-        
         if (targetSection) {
-          targetSection.scrollIntoView({ behavior: 'smooth' });
+          targetSection.scrollIntoView({
+            behavior: 'smooth'
+          });
         }
       });
     });
+    
 
   //   document.addEventListener("DOMContentLoaded", function() {
   //     // Handle section navigation within the same page
