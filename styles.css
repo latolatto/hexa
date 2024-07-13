@@ -824,7 +824,7 @@ textarea{
     box-sizing: border-box;
 }
 
-@media screen and (max-width: 576px){
+@media only screen and (max-width: 576px){
 
   .contact-header{
       margin-top:5%;
@@ -835,7 +835,7 @@ textarea{
 }
 
 
-@media screen and (max-width: 767px){
+@media only screen and (max-width: 767px){
 
 
 
@@ -959,7 +959,7 @@ textarea{
 
 
 
-  @media screen and (min-width:577px) and (max-width: 767px){
+  @media only screen and (min-width:577px) and (max-width: 767px){
 
     .contact-header{
       margin-top:5%;
