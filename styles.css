@@ -180,11 +180,11 @@ nav ul{
     /* top:35%; */
     left:0;
     display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
     width:100%;
-    text-align:center;
+    text-align:center !important;
     padding:5%;
     top: 60%;
     left: 50%;
@@ -836,13 +836,19 @@ textarea{
 
 
 @media screen and (max-width: 767px){
+
+
+
   .dropdown-menu.show ul{
     display:flex;
     flex-direction: column;
     width:10%;
   }
   
+.overlay{
+  top:50%;
 
+}
   
   .contact-details{
     width: 90%;
@@ -897,8 +903,8 @@ textarea{
 
   
   #three h6{
-    /* font-size:2rem; */
-    top:80%;
+    font-size:4rem;
+    top:70%;
   }
   
   #four{
