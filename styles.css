@@ -850,6 +850,9 @@ textarea{
 
 }
   
+h1{
+  font-size: 5rem;
+}
   .contact-details{
     width: 90%;
     justify-content: center;
