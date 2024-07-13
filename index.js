@@ -205,15 +205,47 @@ document.querySelectorAll('.socials li').forEach(item => {
 
 
 
-    document.querySelectorAll('a[data-target]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        e.preventDefault();
+    // document.querySelectorAll('a[data-target]').forEach(anchor => {
+    //   anchor.addEventListener('click', function(e) {
+    //     e.preventDefault();
         
-        const targetID = this.getAttribute('data-target');
-        const targetSection = document.getElementById(targetID);
+    //     const targetID = this.getAttribute('data-target');
+    //     const targetSection = document.getElementById(targetID);
         
-        if (targetSection) {
-          targetSection.scrollIntoView({ behavior: 'smooth' });
-        }
-      });
-    });
+    //     if (targetSection) {
+    //       targetSection.scrollIntoView({ behavior: 'smooth' });
+    //     }
+    //   });
+    // });
+
+  //   document.addEventListener("DOMContentLoaded", function() {
+  //     // Handle section navigation within the same page
+  //     document.querySelectorAll('a[data-target]').forEach(anchor => {
+  //         anchor.addEventListener('click', function(e) {
+  //             e.preventDefault();
+  //             const targetID = this.getAttribute('data-target');
+  //             const targetSection = document.getElementById(targetID);
+  
+  //             if (targetSection) {
+  //                 // Smooth scroll to the section
+  //                 targetSection.scrollIntoView({ behavior: 'smooth' });
+  
+  //                 // Update the history state without changing the URL
+  //                 history.pushState(null, null, window.location.pathname);
+  //             }
+  //         });
+  //     });
+  
+  //     // Handle back/forward navigation for section links
+  //     window.addEventListener("popstate", function() {
+  //         const targetID = location.hash.substring(1); // Remove the '#' character
+  //         if (targetID) {
+  //             const targetSection = document.getElementById(targetID);
+  //             if (targetSection) {
+  //                 targetSection.scrollIntoView({ behavior: 'smooth' });
+  //             }
+  //         }
+  //     });
+  // });
+  
+  

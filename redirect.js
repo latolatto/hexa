@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const links = document.querySelectorAll("a[href='/shqip'], a[href='/home']");
+    const links = document.querySelectorAll("a[href='/al'], a[href='/home']");
 
     links.forEach(link => {
         link.addEventListener("click", function(event) {
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Handle back/forward navigation
     window.addEventListener("popstate", function() {
         const path = location.pathname;
-        if (path === "/shqip") {
+        if (path === "/al") {
             fetchContent("al.html");
         } else if (path === "/home") {
             fetchContent("index.html");
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Initial load based on URL
     const initialPath = location.pathname;
-    if (initialPath === "/shqip") {
+    if (initialPath === "/al") {
         fetchContent("al.html");
     } else if (initialPath === "/home") {
         fetchContent("index.html");
